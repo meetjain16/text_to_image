@@ -33,3 +33,24 @@ export const assets = {
     gemini_icon,
 
 }
+
+export const stepsData = [
+    {
+        title: 'Describe 1',
+        decription: 'A this is the step 1 of the remaining three steps',
+        icon:compass_icon,
+
+    },
+    {
+        title: 'Describe 2',
+        decription: 'A this is the step 2 of the remaining three steps',
+        icon:code_icon,
+
+    },
+    {
+        title: 'Describe 3',
+        decription: 'A this is the step 3 of the remaining three steps',
+        icon:setting_icon,
+
+    },
+]
