@@ -78,3 +78,24 @@ export const testimonial=[
         text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis, provident, at consequatur, itaque veniam ipsa cum eligendi animi vero ab! Eius voluptas dolorem consequuntur enim repudiandae assumenda, aliquam delectus.'
     }
 ]
+
+export const plans=[
+    {
+        id:'basic',
+        price:10,
+        credits:10,
+        desc:'Best for personal use'
+    },
+    {
+        id:'Advanced',
+        price:100,
+        credits:100,
+        desc:'Best for  use'
+    },
+    {
+        id:'Pro',
+        price:1000,
+        credits:1000,
+        desc:'Best for personal use'
+    },
+]
