@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { assets } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
+import { motion } from "motion/react"
 
 const Login = () => {
 
@@ -16,9 +17,13 @@ const{setShowLogin}=useContext(AppContext)
     },[])
 
     return (
-        <div className='absolute top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center'>
+        <div className='fixed top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center'>
 
-            <form
+            <motion.form
+             initial={{ opacity: 0.2, y: 50 }}
+             transition={{ duration: 0.3 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: true }}
                 className='relative bg-white p-10 rounded-xl text-slate-500'
                 action=""
             >
@@ -81,7 +86,7 @@ const{setShowLogin}=useContext(AppContext)
 
 
 
-            </form>
+            </motion.form>
 
 
         </div>

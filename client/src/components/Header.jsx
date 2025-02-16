@@ -5,16 +5,16 @@ import { AppContext } from '../context/AppContext'
 import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
- 
-  const {user,setShowLogin}=useContext(AppContext)
 
-const navigate=useNavigate()
-  const onClickHandler=()=>{
+  const { user, setShowLogin } = useContext(AppContext)
 
-    if(user){
+  const navigate = useNavigate()
+  const onClickHandler = () => {
+
+    if (user) {
       navigate('/result')
     }
-    else{
+    else {
       setShowLogin(true)
     }
 
@@ -53,7 +53,7 @@ const navigate=useNavigate()
         className='text-center max-w-xl mx-auto mt-5 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat minus consequatur eaque error ipsam eligendi iste quod, </motion.p>
 
       <motion.button
-onClick={onClickHandler}
+        onClick={onClickHandler}
 
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -66,14 +66,14 @@ onClick={onClickHandler}
       </motion.button>
 
       <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-      className='flex flex-wrap justify-center mt-16 gap-3'>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className='flex flex-wrap justify-center mt-16 gap-3'>
         {Array(6).fill('').map((item, index) => (
-          <motion.img 
-          whileHover={{ scale: 1.05 ,duration:0.1}}
-          className='rounded hover:scale-105 transition-all duration-100 cursor-pointer max-sm:w-10'
+          <motion.img
+            whileHover={{ scale: 1.05, duration: 0.1 }}
+            className='rounded hover:scale-105 transition-all duration-100 cursor-pointer max-sm:w-10'
             src={index % 2 === 0 ? assets.gallery_icon : assets.bulb_icon} key={index} width={60} alt="" />
         ))}
       </motion.div>
@@ -81,7 +81,7 @@ onClick={onClickHandler}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}
-      className='mt-2 text-neutral-600'>Generared images by us</motion.p>
+        className='mt-2 text-neutral-600'>Generared images by us</motion.p>
 
 
     </motion.div>
