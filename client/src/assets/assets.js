@@ -54,3 +54,27 @@ export const stepsData = [
 
     },
 ]
+
+export const testimonial=[
+    {
+        image:plus_icon,
+        name:'Meet Jain',
+        role:'Web dev0',
+        stares:5,
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis, provident, at consequatur, itaque veniam ipsa cum eligendi animi vero ab! Eius voluptas dolorem consequuntur enim repudiandae assumenda, aliquam delectus.'
+    },
+    {
+        image:plus_icon,
+        name:'Meet Jain',
+        role:'Web dev0',
+        stares:3,
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis, provident, at consequatur, itaque veniam ipsa cum eligendi animi vero ab! Eius voluptas dolorem consequuntur enim repudiandae assumenda, aliquam delectus.'
+    },
+    {
+        image:plus_icon,
+        name:'Meet Jain',
+        role:'Web dev0',
+        stares:4,
+        text:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis, provident, at consequatur, itaque veniam ipsa cum eligendi animi vero ab! Eius voluptas dolorem consequuntur enim repudiandae assumenda, aliquam delectus.'
+    }
+]
