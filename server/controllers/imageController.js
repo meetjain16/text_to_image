@@ -1,5 +1,5 @@
 
-import { response } from "express"
+
 import userModel from "../models/userModel.js"
 import FormData from "form-data"
 import axios from"axios"
@@ -15,7 +15,6 @@ export const generateImage = async (req, res) => {
         if (!user || !prompt) {
             return res.json({ success: false, message: "Missing details" })
 
-
         }
 
         if (user.creditBalance === 0 || userModel.creditBalance < 0) {
@@ -30,7 +29,9 @@ export const generateImage = async (req, res) => {
                 headers: {
                     'x-api-key': process.env.CLIPDROP_API,
                 },
-                responseTupe: 'arrayBuffer'
+                responseType: 'arraybuffer'
+
+                //major error solved
             }
         )
         const base64Image = Buffer.from(data, 'binary').toString('base64')
